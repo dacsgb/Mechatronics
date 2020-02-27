@@ -1,0 +1,6 @@
+{
+    "board": "arduino:avr:uno",
+    "programmer": "AVRISP mkII",
+    "port": "COM9",
+    "sketch": "Homework\\HW -2\\Part 1\\Part_1\\Part_1.ino"
+}

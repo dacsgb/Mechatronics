@@ -1,0 +1,5 @@
+{
+    "programmer": "AVRISP mkII",
+    "board": "arduino:avr:uno",
+    "sketch": "D:\\Git\\Mechatronics\\Lab Codes\\Lab2\\PWM\\pwm_ex.ino"
+}
