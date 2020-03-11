@@ -1,6 +1,7 @@
 int LED = 8;
 int INTER = 2;
 bool state = false;
+int wait = 3000;
 
 void setup() {
   pinMode(LED,OUTPUT);
@@ -12,8 +13,9 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   if(state ==true){
+    Serial.println("triggered");
     digitalWrite(LED,HIGH);
-    delay(3000);
+    delay(wait);
     digitalWrite(LED,LOW);
     state = !state;
   }
