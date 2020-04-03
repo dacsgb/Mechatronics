@@ -1,0 +1,7 @@
+<launch>
+    <!--node pkg="" name="" type=""/-->
+
+    <node pkg="servo_cont" name="servo_controller" type="servo_cont.py"/>
+    <node pkg="joy_processing" name="joy_to_u" type="joy_to_u.py"/>
+
+</launch>
