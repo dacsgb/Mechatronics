@@ -1,3 +1,13 @@
 <launch>
+
     <node pkg="image_processing" name="image_processing" type="image_process.py"/>
+
+    <node pkg="joy_processing" name="joy_processing" type="joy_to_cmd.py">
+        <param name="v_max" value="5"/>
+        <param name="omega_max" value="5"/>
+        <param name="threshold" value="0.05"/>
+        <param name="longi" value="1"/>
+        <param name="angular" value="0"/>
+    </node>
+
 </launch>

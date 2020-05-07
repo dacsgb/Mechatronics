@@ -1,6 +1,9 @@
 <launch>
-    <!--node pkg="" name="" type=""/-->
 
-    <node pkg="joy" name="joystick" type="joy_node"/>
-    <node pkg="rviz" name="visualization" type="rviz"/>
+    <node pkg="joystick" name="joystick" type="joy.py"/>
+
+    <node pkg="website" name="website_status" type="server.py" cwd="node">
+        <param name="Port" value="8080"/>
+    </node>
+
 </launch>

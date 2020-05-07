@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>ROS Cart Dashboard</title>
+    
+        <meta charset="utf-8" />
+        <script type="text/javascript" src="http://static.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
+        <script type="text/javascript" src="http://static.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
+
+        <script type="text/javascript" type="text/javascript">
+        
+        var ros = new ROSLIB.Ros({
+            url : 'ws://localhost:9090'
+        });
+
+        ros.on('connection', function() {
+            document.getElementById("status").innerHTML = "Connected";
+        });
+
+        ros.on('error', function(error) {
+            document.getElementById("status").innerHTML = "Error";
+        });
+
+        ros.on('close', function() {
+            document.getElementById("status").innerHTML = "Closed";
+        });
+
+        ros.getNodes(function(message){
+            
+        });
+
+        var client_listen = new ROSLIB.Topic({
+            ros: ros,
+            name: '/client_count',
+            messageType: 'std_msgs/Int32'
+        });
+
+        client_listen.subscribe(function(message) {
+            document.getElementById("client_num").innerHTML = message.data;
+            client_listen.unsubscribe();
+        });
+
+        </script>
+    </head>
+
+    <body>
+        <h1> Connection Status: <span id="status"></span></h1>
+
+        <center>
+        <table>
+            <tr>
+              <th>Topic</th>
+              <th>Value</th>
+            </tr>
+            <tr>
+              <td>Number of clients</td>
+              <td id="client_num"> </td>
+            </tr>
+        </table>
+    </center>
+
+    </body>
+</html>

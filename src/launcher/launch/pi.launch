@@ -1,7 +1,21 @@
 <launch>
-    <!--node pkg="" name="" type=""/-->
+
+    <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch"/>
+    
+    <node pkg="joy_processing" name="joy_to_cmd" type="joy_to_cmd.py">
+        <param name="v_max" value="5"/>
+        <param name="omega_max" value="5"/>
+        <param name="threshold" value="0.2"/>
+        <param name="longi" value="0"/>
+        <param name="angular" value="1"/>
+    </node>
 
     <node pkg="servo_cont" name="servo_controller" type="servo_cont.py"/>
-    <node pkg="joy_processing" name="joy_to_u" type="joy_to_u.py"/>
+
+    <node pkg="camera" name="camera_feed" type="images.py">
+        <param name="width" value="300"/>
+        <param name="height" value="300"/>
+        <param name="fps"   value="30"/>
+    </node>
 
 </launch>
