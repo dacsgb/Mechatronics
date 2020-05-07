@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.12.6)  7 MAY 2020 14:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.12.6)  7 MAY 2020 16:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -144,18 +144,18 @@ Package: cite 2015/02/27  v 5.5
 ) (s:/Git/Mechatronics/Report/Report.aux)
 \openout1 = `Report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -218,38 +218,51 @@ Package caption Info: End \AtBeginDocument code.
 \tf@toc=\write3
 \openout3 = `Report.toc'.
 
- [1] [2]
-<figures/plate.png, id=17, 883.80188pt x 529.22719pt>
+ [1]
+<figures/final.png, id=14, 824.32968pt x 414.79968pt>
+File: figures/final.png Graphic file (type png)
+<use figures/final.png>
+Package pdftex.def Info: figures/final.png  used on input line 59.
+(pdftex.def)             Requested size: 271.0125pt x 136.37164pt.
+ [2]
+<figures/plate.png, id=19, 883.80188pt x 529.22719pt>
 File: figures/plate.png Graphic file (type png)
 <use figures/plate.png>
-Package pdftex.def Info: figures/plate.png  used on input line 65.
-(pdftex.def)             Requested size: 271.0125pt x 162.28215pt.
-<figures/plate_assembly.png, id=19, 908.64468pt x 584.93532pt>
+Package pdftex.def Info: figures/plate.png  used on input line 69.
+(pdftex.def)             Requested size: 243.90959pt x 146.0507pt.
+<figures/plate_assembly.png, id=20, 908.64468pt x 584.93532pt>
 File: figures/plate_assembly.png Graphic file (type png)
 <use figures/plate_assembly.png>
-Package pdftex.def Info: figures/plate_assembly.png  used on input line 73.
-(pdftex.def)             Requested size: 271.0125pt x 174.46445pt.
- [3 <s:/Git/Mechatronics/Report/figures/plate.png> <s:/Git/Mechatronics/Report/figures/plate_assembly.png>]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 96.
- (c:/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 96.
- (s:/Git/Mechatronics/Report/Report.bbl [4]) [5] (s:/Git/Mechatronics/Report/Report.aux) ) 
+Package pdftex.def Info: figures/plate_assembly.png  used on input line 69.
+(pdftex.def)             Requested size: 243.90959pt x 157.01532pt.
+<figures/motort.png, id=21, 716.6775pt x 581.92406pt>
+File: figures/motort.png Graphic file (type png)
+<use figures/motort.png>
+Package pdftex.def Info: figures/motort.png  used on input line 71.
+(pdftex.def)             Requested size: 243.90959pt x 198.0469pt.
+<figures/pi.png, id=22, 771.63281pt x 426.09187pt>
+File: figures/pi.png Graphic file (type png)
+<use figures/pi.png>
+Package pdftex.def Info: figures/pi.png  used on input line 71.
+(pdftex.def)             Requested size: 243.90959pt x 134.68126pt.
+ [3 <s:/Git/Mechatronics/Report/figures/final.png> <s:/Git/Mechatronics/Report/figures/plate.png> <s:/Git/Mechatronics/Report/figures/plate_assembly.png> <s:/Git/Mechatronics/Report/figures/motort.png> <s:/Git/Mechatronics/Report/figures/pi.png>] (s:/Git/Mechatronics/Report/Report.bbl
+
+LaTeX Warning: Empty `thebibliography' environment on input line 24.
+
+) [4] (s:/Git/Mechatronics/Report/Report.aux) ) 
 Here is how much of TeX's memory you used:
- 3432 strings out of 492164
- 50246 string characters out of 6129103
- 124673 words of memory out of 5000000
- 7779 multiletter control sequences out of 15000+600000
- 10880 words of font info for 39 fonts, out of 8000000 for 9000
+ 3428 strings out of 492164
+ 50222 string characters out of 6129103
+ 124670 words of memory out of 5000000
+ 7777 multiletter control sequences out of 15000+600000
+ 10533 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,7n,42p,1205b,268s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on s:/Git/Mechatronics/Report/Report.pdf (6 pages, 343338 bytes).
+ 38i,10n,42p,1181b,270s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on s:/Git/Mechatronics/Report/Report.pdf (5 pages, 780054 bytes).
 PDF statistics:
- 56 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
+ 51 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

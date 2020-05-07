@@ -7,7 +7,6 @@
 \usepackage{cite}
 \graphicspath{ {figures/} }
 
-
 \newcommand{\horrule}[1]{\rule{\linewidth}{#1}}
 \title{	
 \normalfont \normalsize 
@@ -20,8 +19,6 @@
 \horrule{0.5pt} \\[0.5cm] % Thick bottom horizontal rule
 }
 
-
-
 \author{Diego Alejadro Colón Serrano}
 \date{May 7\textsuperscript{th}, 2020}
 
@@ -33,8 +30,7 @@
 
 \section{Introduction}
 
-	When looking for a mobile robotic platform to start in the hobby, it is quite daunting to select where to start. If you are completely new to programming and hardware design, a premade kit might seem like a good value proposition. The kit includes step-by-step instructions, all the parts required and there are many tutorials online on how to do things. Now, this option might be too simple for someone with more technical knowledge and is interested in mobile robotics and wants a platform to work with. Is there something that can fit the needs of both of them? Yes, there are but the prices of platforms that are accessible to newcomers but still relevant to experienced individuals are significant investments. For this reason, I set out to create a more budget-friendly mobile robotics platform that can be built and programmed by newcomers and expanded upon as they grow in the hobby. A platform that is simple to put together and work with but allows for possibilities past its original design. With that goal in mind, I designed a platform that achieves that which it's commercial competitors do while reducing the entrance price. \cite{DUMMY:1}
-
+	When looking for a mobile robotic platform to start in the hobby, it is quite daunting to select where to start. If you are completely new to programming and hardware design, a premade kit might seem like a good value proposition. The kit includes step-by-step instructions, all the parts required and there are many tutorials online on how to do things. Now, this option might be too simple for someone with more technical knowledge and is interested in mobile robotics and wants a platform to work with. Is there something that can fit the needs of both of them? Yes, there are but the prices of platforms that are accessible to newcomers but still relevant to experienced individuals are significant investments. For this reason, I set out to create a more budget-friendly mobile robotics platform that can be built and programmed by newcomers and expanded upon as they grow in the hobby. A platform that is simple to put together and work with but allows for possibilities past its original design. With that goal in mind, I designed a platform that achieves that which it's commercial competitors do while reducing the entrance price. 
 \section{Design}
 
 \subsection{Design objectives}
@@ -57,23 +53,27 @@
 
 	The Turtlebot is currently in its third version and sells at a starting MSRP of 549.00 USD for the base model. The base model is equipped with: a Raspberry Pi 3, two encoded motors, 360 degree LiDAR sensor, 11.1V Li-Po battery, IMU unit and a low level control board to interract with the encoders and sensors. This combination of sensors, actuators and computation allows for a very versitile platform on which many different aspects of mobile robotics can be investigated and explored.
 
-\subsection{Mechanical Design}
-
-	For the mechanical design of the project it was assumed that the user has access to a 3D printer which although not necessary for the project, it makes the fabrication simpler. With this in mind, it was decided to make the structure as simple and printer-friendly as possible. The structure consists of several stacked plates that are held together by standoffs and 3mm bolts. The figure below shows what the plates look like.
+\section{Results}
 
 	\begin{figure}[h]
-	\includegraphics[width=0.5\textwidth]{plate.png}
-	\centering
-	\caption{Plates on which the structure is based on}
+		\includegraphics[width=0.5\textwidth]{final.png}
+		\centering
+		\caption{Final Model}
 	\end{figure}
+
+	\subsection{Mechanical Design}
+
+	For the mechanical design of the project it was assumed that the user has access to a 3D printer which although not necessary for the project, it makes the fabrication simpler. With this in mind, it was decided to make the structure as simple and printer-friendly as possible. The structure consists of several stacked plates that are held together by standoffs and 3mm bolts. The images below show how the base plates connect to the different components of the platform.
+	
+	\begin{tabular}{ c c }
+		\includegraphics[width=0.45\textwidth]{plate.png} & \includegraphics[width=0.45\textwidth]{plate_assembly.png} \\
+		Base Plate & Plate Assembly with Battery and Standoffs \\
+		\includegraphics[width=0.45\textwidth]{motort.png} & \includegraphics[width=0.45\textwidth]{pi.png}\\
+		Motor and Wheel Assembly on Platform & Raspberry Pi and H-Bridge
+	\end{tabular}
 
 	Each plate has: a group of 4 slots on each corner on to which the motors are mounted, four large slots for cables to be guided through, two rows of holes to secure adjacent plates, and a cavity for the battery to be placed in. This design allows for the user to 3D print as many plates as they want and expand their robot.
 	
-	\begin{figure}[h]
-		\includegraphics[width=0.5\textwidth]{plate_assembly.png}
-		\centering
-		\caption{Plate and battery assembly}
-	\end{figure}
 
 \subsection{Electrical Design}
 
@@ -84,27 +84,6 @@
 	The software has to be simple for a newcomer to pick it up while being relevant to the current industrial and research in mobile robotics. This led to the the robot's initial software to be based around ROS. ROS provides the ability to program in different languages, mainly C++ and Python. This allows for newcomers to learn by starting with Python given its simplicity and work their way up to more advanced programs in C++. ROS also has a great community base with resources and tutorials to learn how it operates in both C++ and Python. 
 
 	Apart from this, the way that the user structures the software is completely up to them, but for the purposes of this project I created an example in which through a joystick, velocity commands are sent to the robot and it returns visual feebback from a camera. All of the code was written in Python without using prewritten ROS packages and is available on my Github (https://github.com/dacsgb/Mechatronics-Project.git).
-
-\section{Validation}
-	To validate the that the the platform achieved its goal of lowering the financial barrier for people to have access to a mobile robotics platform, the cost of the project was compared to the MSRP of the Turtlebot. If the platform cost less than the MSRP of the Turtlebot, while maintaining similar fuctionalities, the project was successful.
-
-\subsection{Procedures}
-
-	The general procedures for the project were as follow:
-
-	\begin{itemize}
-		\item Identify minimum requirements for the platform based on the Turtlebot 3
-		\item Model platform in Solidworks
-		\item Cost design based on prices on Amazon
-		\item Build prototype with parts available
-		\item Demonstrate functionality with example code
-	\end{itemize}
-
-
-
-
-\section{Results}
-	Demonstrate your mechatronc system (simulator or experiment). Provide a link to your demonstration. Collect and present necessary dtat to prove the effectiveness of your design
 
 \section{Discussion}
 
