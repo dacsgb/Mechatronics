@@ -53,8 +53,7 @@
 
 	The Turtlebot is currently in its third version and sells at a starting MSRP of 549.00 USD for the base model. The base model is equipped with: a Raspberry Pi 3, two encoded motors, 360 degree LiDAR sensor, 11.1V Li-Po battery, IMU unit and a low level control board to interract with the encoders and sensors. This combination of sensors, actuators and computation allows for a very versitile platform on which many different aspects of mobile robotics can be investigated and explored.
 
-\section{Results}
-
+\section{Proposed Platform}
 	\begin{figure}[h]
 		\includegraphics[width=0.5\textwidth]{final.png}
 		\centering
@@ -62,8 +61,7 @@
 	\end{figure}
 
 	\subsection{Mechanical Design}
-
-	For the mechanical design of the project it was assumed that the user has access to a 3D printer which although not necessary for the project, it makes the fabrication simpler. With this in mind, it was decided to make the structure as simple and printer-friendly as possible. The structure consists of several stacked plates that are held together by standoffs and 3mm bolts. The images below show how the base plates connect to the different components of the platform.
+    For the mechanical design of the project, it was assumed that the user has access to a 3D printer which although not necessary for the project, makes the fabrication simpler. With this in mind, it was decided to make the structure as simple and printer-friendly as possible. The structure consists of several stacked plates that are held together by standoffs and 3mm bolts. The images below show how the base plates connect to the different components of the platform.
 	
 	\begin{tabular}{ c c }
 		\includegraphics[width=0.45\textwidth]{plate.png} & \includegraphics[width=0.45\textwidth]{plate_assembly.png} \\
@@ -72,24 +70,24 @@
 		Motor and Wheel Assembly on Platform & Raspberry Pi and H-Bridge
 	\end{tabular}
 
-	Each plate has: a group of 4 slots on each corner on to which the motors are mounted, four large slots for cables to be guided through, two rows of holes to secure adjacent plates, and a cavity for the battery to be placed in. This design allows for the user to 3D print as many plates as they want and expand their robot.
+    Each plate has a group of 4 slots on each corner on to which the motors are mounted, four large slots for cables to be guided through, two rows of holes to secure adjacent plates, and a cavity for the battery to be placed in. This design allows for the user to 3D print as many plates as they want and expand their robot.
 	
-
 \subsection{Electrical Design}
-
-	The electrical design was made as simple as possible to not intimidate newcomers. This meant that soldering was not considered, and that the majority of the wiring had to be "plug and play" as opposed to having to splice wires together, worry about battery protection circuits, etc. The electrical design consists of a Raspberry Pi 4 connected to a  DFROBOT IO Expansion Hat which simplifies the connections between the the Raspberry Pi and the rest of the hardware. This is powered by a 12V Lithium Ion battery pack whose voltage is reduced to 5 volts through a buck converter. The IO Expansion Hat has four PWM ports, two of which are connected to the H-Bridge to drive the motors, and many digital pins, four of which are connected to the H-Bridge to determine direction of the motors.
+	The electrical design was made as simple as possible to not intimidate newcomers. This meant that soldering was not considered and that the majority of the wiring had to be "plug and play" as opposed to having to splice wires together, worry about battery protection circuits, etc. The electrical design consists of a Raspberry Pi 4 connected to a  DFROBOT IO Expansion Hat which simplifies the connections between the Raspberry Pi and the rest of the hardware. This is powered by a 12V Lithium-Ion battery pack whose voltage is reduced to 5 volts through a buck converter. The IO Expansion Hat has four PWM ports, two of which are connected to the H-Bridge to drive the motors, and many digital pins, four of which are connected to the H-Bridge to determine the direction of the motors.
 
 \subsection{Software Design}
+	The software has to be simple for a newcomer to pick it up while being relevant to the current industrial and research in mobile robotics. This led to the robot's initial software to be based around ROS. ROS provides the ability to program in different languages, mainly C++ and Python. This allows newcomers to learn by starting with Python given its simplicity and work their way up to more advanced programs in C++. ROS also has a great community base with resources and tutorials to learn how it operates in both C++ and Python. 
 
-	The software has to be simple for a newcomer to pick it up while being relevant to the current industrial and research in mobile robotics. This led to the the robot's initial software to be based around ROS. ROS provides the ability to program in different languages, mainly C++ and Python. This allows for newcomers to learn by starting with Python given its simplicity and work their way up to more advanced programs in C++. ROS also has a great community base with resources and tutorials to learn how it operates in both C++ and Python. 
+	Apart from this, the way that the user structures the software is completely up to them, but for this project, I created an example in which through a joystick, velocity commands are sent to the robot and it returns visual feedback from a camera. All of the code was written in Python without using prewritten ROS packages and is available on my Github (https://github.com/dacsgb/Mechatronics-Project.git). 
 
-	Apart from this, the way that the user structures the software is completely up to them, but for the purposes of this project I created an example in which through a joystick, velocity commands are sent to the robot and it returns visual feebback from a camera. All of the code was written in Python without using prewritten ROS packages and is available on my Github (https://github.com/dacsgb/Mechatronics-Project.git).
 
-\section{Discussion}
+\subsection{Results}
+	After finalizing the design, the project was costed and compared with the Turtlebot3 to determine how successful the project was. The total cost of the project, apart from the time invested, comes out to be \$ 411.59 before taxes with the most expensive components being the 4 motors used to drive the platform. This is a significant decrease to the \$ 549.00 MSRP of the Turtlebot3. The base configuration of the platform also includes a camera for computer vision projects in the \$ 349.59. 
 
-\section{Conclusions}
+	Since there is an additional \$ 139 available after the base cost, some additional options were costed to determine how much can be done with the extra budget. For an additional \$ 143.11 (plus tax) the platform can be equipped with mecanum wheels and a 6 DOF robotic arm, expanding the possibilities of the platform and user while being \$ 5.70 over the MSRP of the Turtlebot3.
 
-\section{Recommendations}
+\section{Conclusion}
+	In conclusion, this project was a success. It lowered the financial barrier for users to enter the mobile robotics field while maintaining the same level of flexibility and features as the popular Turtlebot3. It showcases how the user can lower costs by creating the platform themselves, even if it is following open-source plans. I do not want this project to discourage users from considering the purchase of Turtlebots for academic and research use despite the added possibilities the platform provides for a comparable price. What the team behind Turtlebot has done has helped the research and academic fields greatly. This project was purely targeting users interested in getting started in the field of mobile robotics, needing a platform and looking for an option that allows them to grow in whichever direction they feel best suits their interests and needs. 
 
 \bibliographystyle{IEEEtran}
 \bibliography{research}
